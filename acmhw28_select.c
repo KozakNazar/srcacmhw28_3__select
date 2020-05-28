@@ -95,7 +95,7 @@ void printFormattedProductKey(unsigned char * productKey, unsigned int outOfEdge
     unsigned char value;      
     for(index = 0; index < DIGITS_COUNT && index < outOfEdgeIndex; ++index){
         value = productKey[index];
-        value > 9 ? (value += 'A') : (value += '0') ;
+        value > 9 ? (value += 'A' - 10) : (value += '0') ;
         write(STDOUT_FILENO, &value, 1);
         if(!((index + 1) % GROUP_DIGITS_SIZE) && (index + 1) < DIGITS_COUNT){
             write(STDOUT_FILENO, "-", 1);
