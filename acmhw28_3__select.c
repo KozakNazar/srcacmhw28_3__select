@@ -1,6 +1,6 @@
 /*******************************************************************************
 * N.Kozak // Lviv'2020 // ACM // event based(by select) validator example by C *
-*    file: acmhw28_3_select.c                                                  *
+*    file: acmhw28_3__select.c                                                 *
 ********************************************************************************/
 #include <stdio.h>
 #ifdef __linux__
